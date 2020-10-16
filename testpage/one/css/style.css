@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body {
+    background: #000000;
+}
+.nav-bar{
+    display: flex;
+    padding:2% 4%;
+}
+.nav-logo img {
+    width: 300px;
+    top:-10px;
+}
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px
+}
+.nav-links ul a{
+    color: #ffea00;
+    text-decoration: none;
+    font-size: 18px;
+}
+.hero{
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    text-align: center;
+}
+h1{
+    font-size: 60px;
+    color: transparent;
+    -webkit-text-stroke: 1px #ffea00;
+    background: url(../assets/back.png);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+    margin-bottom:4%;
+}
+@keyframes back{
+    100%{
+        background-position:2000px 0;
+    }
+}
+.btn{
+    width: 160px;
+    height: 50px;
+    border: 1px solid #ffea00;
+    color: #ffea00;
+    margin: auto;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.btn p{
+    font-size: 20px;
+    padding-top: 12px;
+    font-weight: bold;
+    transition: 1s;
+}
+span{
+    width: 160px;
+    height: 70px;
+    top:-20px;
+    Left:-200px;
+    position:absolute;
+    background: #ffea00;
+    transition:2s
+}
+.btn:hover span{
+    transform: translate(200px);
+}
+.btn:hover p{
+    color: #000;
+transition-delay: .5s;
+}
