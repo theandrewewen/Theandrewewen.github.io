@@ -11,10 +11,6 @@ body {
     background-color: lightyellow;
     background-size: contain cover;
   }
-  main{
-    margin: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
 
 .nav-logo img{
   width: 7%;
