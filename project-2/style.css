@@ -1,0 +1,17 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+h2{
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif}
+
+.container {
+	width: 30em;
+	overflow-x: auto;
+	white-space: nowrap;
+}
