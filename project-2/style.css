@@ -1,4 +1,9 @@
-body{
+
+* {
+    margin:0;
+    padding:0;
+ }
+  body{
     margin: 0%;
     padding: 0%;
 }
@@ -15,3 +20,46 @@ h2{
 	overflow-x: auto;
 	white-space: nowrap;
 }
+
+footer{
+    font-family: sans-serif;
+    background-color: rgb(68, 68, 68);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.footer-links{
+    display: flex;
+    padding-top: 5%;
+}
+.bd-lasts{
+    margin: 3%;
+}
+.email{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.landinghead{
+padding-bottom: 1%;
+}
+
+@media screen and (max-width: 600px){
+   .landinghead {
+       background-image: url("assets/ben-davis-name-logo.png");
+       background-size: contain;
+       background-repeat: no-repeat;
+       height: 20vh;
+    }
+}
+@media screen and (min-width:600px){
+    .landinghead{
+        background-image: url("assets/auto-bd.jpg");
+        height: 50vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+    
