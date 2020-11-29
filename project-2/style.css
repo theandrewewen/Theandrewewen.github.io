@@ -1,65 +1,80 @@
+@media screen and (min-width:520px){
+    .landing-body{
+        background: url("assets/auto-bd.jpg") no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 100vh;
 
-* {
-    margin:0;
-    padding:0;
- }
-  body{
-    margin: 0%;
-    padding: 0%;
+    }
 }
-img{
-    max-width: 100%;
-    height: auto;
+@media screen and (max-width:520px){
+    .landing-body{ 
+        background: url("assets/truck-ad-1-full.jpg") no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 100vh;
+    }
 }
-h2{
+.parent{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.enter-btn{
+    position: relative;
+    width: 160px;
+    height: 60px;
+    border: 2px solid white;
+    cursor: pointer;
     text-align: center;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif}
-
-.container {
-	width: 30em;
-	overflow-x: auto;
-	white-space: nowrap;
-}
-
-footer{
-    font-family: sans-serif;
-    background-color: rgb(68, 68, 68);
     color: white;
-    text-align: center;
-    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-size: large;
+   background-color: rgba(97, 97, 97, 0.514);
+}
+.enter-btn:hover {
+    background-color: white;
+    transition: .1s;
 }
 a{
     text-decoration: none;
     color: white;
 }
-.footer-links{
-    display: flex;
-    padding-top: 5%;
+a:hover{
+    transition: .1s;
+    color: black;
 }
-.bd-lasts{
-    margin: 3%;
+h1{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-.email{
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
-.landinghead{
-padding-bottom: 1%;
+h2{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-@media screen and (max-width: 600px){
-   .landinghead {
-       background-image: url("assets/ben-davis-name-logo.png");
-       background-size: contain;
-       background-repeat: no-repeat;
-       height: 20vh;
-    }
+html .parent{
+    height: 100%;
+    margin: 0;
+  }
+.responsive ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-gap: 0.25rem;
 }
-@media screen and (min-width:600px){
-    .landinghead{
-        background-image: url("assets/auto-bd.jpg");
-        height: 50vh;
-        background-size: cover;
-        background-repeat: no-repeat;
+ul {
+    list-style: none;
+    margin: 0 0 0 2rem;
+    padding: 2.2rem;
+    background: white;
+    box-shadow: 3px 2px 12px rgba(0, 0, 0, 0.4);
 }
-    
+img {
+    display: block;
+    width: 100%;
+}
